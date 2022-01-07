@@ -43,8 +43,10 @@ class ViewController: UIViewController {
                                                   name: UIResponder.keyboardWillHideNotification,
                                                   object: nil)
     }
-    
+     
     //    MARK: - Actions
+    
+//    MARK
     @IBAction func loginButtonAction(_ sender: Any) {
         if loginInput.text == "admin" && passwordInput.text == "1234" {
             print("success")
