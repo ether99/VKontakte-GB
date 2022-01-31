@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1477E33278C6E7E00ED1012 /* GroupsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1477E32278C6E7E00ED1012 /* GroupsTableController.swift */; };
+		E1477E36278C71D500ED1012 /* GroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1477E35278C71D500ED1012 /* GroupsCell.swift */; };
+		E1477E3A278CC87600ED1012 /* friendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1477E39278CC87600ED1012 /* friendModel.swift */; };
 		E19BE80427847EC000834E13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BE80327847EC000834E13 /* AppDelegate.swift */; };
 		E19BE80627847EC000834E13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BE80527847EC000834E13 /* SceneDelegate.swift */; };
 		E19BE80827847EC000834E13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19BE80727847EC000834E13 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E1477E32278C6E7E00ED1012 /* GroupsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableController.swift; sourceTree = "<group>"; };
+		E1477E35278C71D500ED1012 /* GroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCell.swift; sourceTree = "<group>"; };
+		E1477E39278CC87600ED1012 /* friendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendModel.swift; sourceTree = "<group>"; };
 		E19BE80027847EC000834E13 /* VKontakte GB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VKontakte GB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19BE80327847EC000834E13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E19BE80527847EC000834E13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1477E2F278C6B5D00ED1012 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1477E37278CB85200ED1012 /* LoginController */,
+				E1477E30278C6C2900ED1012 /* GroupsController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E1477E30278C6C2900ED1012 /* GroupsController */ = {
+			isa = PBXGroup;
+			children = (
+				E1477E38278CC7C600ED1012 /* Models */,
+				E1477E34278C718600ED1012 /* Cell */,
+				E1477E32278C6E7E00ED1012 /* GroupsTableController.swift */,
+			);
+			path = GroupsController;
+			sourceTree = "<group>";
+		};
+		E1477E34278C718600ED1012 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E1477E35278C71D500ED1012 /* GroupsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E1477E37278CB85200ED1012 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				E19BE80727847EC000834E13 /* ViewController.swift */,
+			);
+			path = LoginController;
+			sourceTree = "<group>";
+		};
+		E1477E38278CC7C600ED1012 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1477E39278CC87600ED1012 /* friendModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E19BE7F727847EC000834E13 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +105,9 @@
 		E19BE80227847EC000834E13 /* VKontakte GB */ = {
 			isa = PBXGroup;
 			children = (
+				E1477E2F278C6B5D00ED1012 /* Controllers */,
 				E19BE80327847EC000834E13 /* AppDelegate.swift */,
 				E19BE80527847EC000834E13 /* SceneDelegate.swift */,
-				E19BE80727847EC000834E13 /* ViewController.swift */,
 				E19BE80927847EC000834E13 /* Main.storyboard */,
 				E19BE80C27847EC200834E13 /* Assets.xcassets */,
 				E19BE80E27847EC200834E13 /* LaunchScreen.storyboard */,
@@ -138,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1477E3A278CC87600ED1012 /* friendModel.swift in Sources */,
+				E1477E36278C71D500ED1012 /* GroupsCell.swift in Sources */,
 				E19BE80827847EC000834E13 /* ViewController.swift in Sources */,
 				E19BE80427847EC000834E13 /* AppDelegate.swift in Sources */,
+				E1477E33278C6E7E00ED1012 /* GroupsTableController.swift in Sources */,
 				E19BE80627847EC000834E13 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
